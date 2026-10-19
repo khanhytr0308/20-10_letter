@@ -134,8 +134,26 @@ function shakeError(el, message) {
 }
 
 // ────────────────────────────────────────────────────────────
-// 8. BẮN PHÁO HOA CÁNH HOA & TRÁI TIM (CONFETTI BURST)
+// 8. BẮN PHÁO HOA CÁNH HOA & TRÁI TIM (CONFETTI BURST - TỐI ƯU 60FPS)
 // ────────────────────────────────────────────────────────────
+let precomputedConfettiShapes = null;
+
+function getConfettiShapes() {
+  if (precomputedConfettiShapes) return precomputedConfettiShapes;
+  if (typeof confetti !== "function" || typeof confetti.shapeFromText !== "function") return null;
+
+  try {
+    precomputedConfettiShapes = [
+      confetti.shapeFromText({ text: "🌸", scalar: 2.0 }),
+      confetti.shapeFromText({ text: "💖", scalar: 1.8 }),
+      confetti.shapeFromText({ text: "✨", scalar: 1.6 })
+    ];
+  } catch (e) {
+    precomputedConfettiShapes = null;
+  }
+  return precomputedConfettiShapes;
+}
+
 function triggerConfettiBurst(buttonEl) {
   if (typeof confetti !== "function") return;
 
@@ -143,88 +161,39 @@ function triggerConfettiBurst(buttonEl) {
   const originX = (rect.left + rect.width / 2) / window.innerWidth;
   const originY = (rect.top + rect.height / 2) / window.innerHeight;
 
-  // Đợt 1: Bắn bung tỏa các hạt sắc màu pastel từ tâm phong bì
+  const shapes = getConfettiShapes();
+
+  // Bắn 1 đợt pháo hoa cánh hoa & màu pastel thanh thoát, cực nhẹ và mượt mà
   confetti({
-    particleCount: 50,
-    spread: 360,
-    startVelocity: 32,
-    ticks: 100,
+    particleCount: 36,
+    spread: 100,
+    startVelocity: 26,
+    ticks: 85,
     origin: { x: originX, y: originY },
     colors: ["#e91e8c", "#f48fb1", "#ff4081", "#ffd700", "#ffffff", "#f8bbd9"],
-    zIndex: 9999
+    shapes: shapes || ["circle", "square"],
+    zIndex: 9999,
+    disableForReducedMotion: true
   });
-
-  // Đợt 2: Cánh hoa đào 🌸 và trái tim 💖 bay bổng
-  try {
-    const flower = confetti.shapeFromText({ text: "🌸", scalar: 2.2 });
-    const heart = confetti.shapeFromText({ text: "💖", scalar: 2.0 });
-    const sparkle = confetti.shapeFromText({ text: "✨", scalar: 1.8 });
-    const rose = confetti.shapeFromText({ text: "🌹", scalar: 2.2 });
-
-    confetti({
-      shapes: [flower, heart, sparkle, rose],
-      particleCount: 26,
-      spread: 120,
-      startVelocity: 26,
-      scalar: 1,
-      ticks: 130,
-      origin: { x: originX, y: originY - 0.04 },
-      zIndex: 9999
-    });
-  } catch (e) {
-    // Dự phòng nếu trình duyệt không hỗ trợ shapeFromText
-    confetti({
-      particleCount: 30,
-      spread: 120,
-      startVelocity: 25,
-      origin: { x: originX, y: originY },
-      colors: ["#ff69b4", "#ff1493", "#ffd700"]
-    });
-  }
-
-  // Đợt 3: Pháo hoa phụ từ hai mép màn hình khi modal vừa mở
-  setTimeout(() => {
-    confetti({
-      particleCount: 22,
-      angle: 60,
-      spread: 50,
-      origin: { x: 0.05, y: 0.65 },
-      colors: ["#e91e8c", "#ff4081", "#f8bbd9", "#ffd700"],
-      zIndex: 9999
-    });
-    confetti({
-      particleCount: 22,
-      angle: 120,
-      spread: 50,
-      origin: { x: 0.95, y: 0.65 },
-      colors: ["#e91e8c", "#ff4081", "#f8bbd9", "#ffd700"],
-      zIndex: 9999
-    });
-  }, 320);
 }
 
 // ────────────────────────────────────────────────────────────
-// 9. MỞ MODAL BỨC THƯ (KÈM ANIMATION BUNG PHONG BÌ)
+// 9. MỞ MODAL BỨC THƯ (TỐI ƯU HOÁ TỐC ĐỘ & ĐỘ MƯỢT)
 // ────────────────────────────────────────────────────────────
 function openLetter() {
   const openBtn = document.getElementById("openLetterBtn");
-
-  // Kích hoạt animation nhún và bùng sáng cho phong bì
   openBtn.classList.add("opening");
 
-  // Bắn pháo hoa cánh hoa & tim ngay từ vị trí phong bì
+  // Kích hoạt pháo hoa
   triggerConfettiBurst(openBtn);
 
-  // Mở modal thư sau khoảng delay ngắn để người dùng kịp thấy phong bì nhún và bung hoa
+  // Mở modal mượt mà, phản hồi ngay lập tức (không trễ 200ms)
   setTimeout(() => {
     const modal = document.getElementById("letterModal");
     const letterTitle = document.getElementById("letterTitle");
     const letterBody = document.getElementById("letterBody");
 
-    // Lời chào cá nhân hóa
     letterTitle.textContent = "Gửi " + detectedName + "... 💌";
-
-    // Render nội dung thư
     letterBody.innerHTML = "";
 
     if (selectedLetter.type === "text") {
@@ -241,24 +210,16 @@ function openLetter() {
       letterBody.appendChild(img);
     }
 
-    // Hiện modal
     modal.classList.remove("hidden");
-    modal.style.opacity = "0";
-    modal.offsetHeight; // reflow
-    modal.style.transition = "opacity 0.4s ease";
     modal.style.opacity = "1";
 
-    // Hiệu ứng mở phong bì 3D cho modal-content
     const modalContent = modal.querySelector(".modal-content");
-    modalContent.style.animation = "none";
-    modalContent.offsetHeight;
-    modalContent.style.animation = "openEnvelope 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards";
+    modalContent.style.animation = "openEnvelope 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards";
 
-    // Gỡ class opening khỏi nút phong bì
     setTimeout(() => {
       openBtn.classList.remove("opening");
-    }, 600);
-  }, 200);
+    }, 400);
+  }, 60);
 }
 
 // ────────────────────────────────────────────────────────────
@@ -266,9 +227,12 @@ function openLetter() {
 // ────────────────────────────────────────────────────────────
 function closeLetter() {
   const modal = document.getElementById("letterModal");
-  modal.style.transition = "opacity 0.3s ease";
+  modal.style.transition = "opacity 0.25s ease";
   modal.style.opacity = "0";
-  setTimeout(() => modal.classList.add("hidden"), 300);
+  setTimeout(() => {
+    modal.classList.add("hidden");
+    modal.style.transition = "";
+  }, 250);
 }
 
 // ────────────────────────────────────────────────────────────
@@ -298,6 +262,7 @@ function createFloatingHearts() {
 // ────────────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", () => {
   createFloatingHearts();
+  getConfettiShapes(); // Khởi tạo trước các icon hoa/tim để không bị lag khi click
 
   document.getElementById("confirmBtn")
     .addEventListener("click", handleNameSubmit);
