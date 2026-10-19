@@ -607,8 +607,8 @@ body {
   position: absolute;
   top: -20px;
   right: -15px;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   border: 3px solid #ffffff;
   background: #ffffff;
@@ -841,8 +841,8 @@ body {
   }
 
   .modal-logo {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     top: -16px;
     right: -8px;
     border-width: 2.5px;
