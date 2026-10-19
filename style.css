@@ -4,9 +4,9 @@
 
 /* ────────────────────────────────────────────────────────────
    IMPORT FONT (Google Fonts)
-   👉 Thay font khác nếu muốn: https://fonts.google.com
+   👉 Caveat (viết tay tự nhiên), Dancing Script, Playfair Display, Lato
 ──────────────────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
 /* ────────────────────────────────────────────────────────────
    CSS VARIABLES — MÀU SẮC & THIẾT KẾ
@@ -217,7 +217,7 @@ body {
   font-weight: 600;
   color: var(--text-dark);
   line-height: 1.45;
-  margin-bottom: 8px;
+  margin-bottom: 28px; /* Tối ưu khoảng cách thoáng đãng, cân đối với ô input */
 }
 
 /* Phụ đề */
@@ -536,6 +536,29 @@ body {
   }
 }
 
+/* Hiệu ứng nhún và bùng sáng khi bấm mở phong bì */
+.envelope-btn.opening .envelope-wrapper {
+  animation: envelopeBurst 0.35s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes envelopeBurst {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(0.92);
+    box-shadow: 0 4px 16px rgba(233, 30, 140, 0.2);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(233, 30, 140, 0.65), inset 0 0 15px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: var(--shadow-card);
+  }
+}
+
 /* ────────────────────────────────────────────────────────────
    MODAL — KHUNG THƯ POPUP
 ──────────────────────────────────────────────────────────── */
@@ -560,9 +583,13 @@ body {
   max-height: 88vh;
   overflow: visible;
   /* Cho phép logo và hoa trang trí nổi bật ra mép ngoài */
-  box-shadow: 0 30px 80px rgba(60, 10, 40, 0.35);
+  box-shadow: 0 25px 70px rgba(60, 10, 40, 0.32);
   position: relative;
   border: 1.5px solid rgba(248, 187, 217, 0.5);
+  transform-origin: center center;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 /* Họa tiết hoa pastel trang trí bên hông trái */
@@ -596,7 +623,7 @@ body {
 /* Thanh tiêu đề modal */
 .modal-header {
   background: linear-gradient(135deg, var(--pink-main) 0%, var(--pink-deep) 100%);
-  padding: 28px 32px 22px;
+  padding: 26px 36px 20px;
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   text-align: center;
   position: relative;
@@ -628,15 +655,18 @@ body {
   font-size: 0.78rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 6px;
 }
 
 .modal-title {
   font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
+  font-size: 2.1rem;
+  font-weight: 700;
   color: #fff;
+  line-height: 1.35;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 0 35px;
 }
 
 /* Phần thân modal */
@@ -682,28 +712,32 @@ body {
   font-size: 1.1rem;
 }
 
-/* Nội dung thư chữ */
+/* Nội dung thư chữ - Phong cách thư tay cổ điển */
 .letter-text {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  line-height: 1.85;
-  color: var(--text-medium);
+  font-family: 'Caveat', 'Dancing Script', cursive;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 36px;
+  color: #381b29;
   white-space: pre-wrap;
   word-break: break-word;
   text-align: left;
+  letter-spacing: 0.3px;
 
   /* Khung thư tay */
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(233, 30, 140, 0.15);
+  background-color: rgba(255, 255, 255, 0.94);
+  border: 1.5px solid rgba(248, 187, 217, 0.6);
   border-radius: 16px;
-  padding: 28px 28px;
-  box-shadow: inset 0 2px 10px rgba(233, 30, 140, 0.07);
+  padding: 24px 28px;
+  box-shadow: inset 0 2px 12px rgba(233, 30, 140, 0.04), 0 4px 20px rgba(180, 30, 100, 0.06);
 
-  /* Gạch ngang dạng trang giấy */
-  background-image: repeating-linear-gradient(to bottom,
-      transparent,
-      transparent 27px,
-      rgba(233, 30, 140, 0.08) 28px);
+  /* Gạch ngang trang giấy - Chu kỳ 36px ăn khớp chuẩn xác với line-height */
+  background-image: linear-gradient(to bottom,
+      transparent 35px,
+      rgba(233, 30, 140, 0.12) 35px,
+      rgba(233, 30, 140, 0.12) 36px);
+  background-size: 100% 36px;
+  background-position: 0 24px;
 }
 
 /* Ảnh thư tay */
@@ -753,20 +787,20 @@ body {
   box-shadow: 0 8px 24px rgba(233, 30, 140, 0.35);
 }
 
-/* Hiệu ứng mở phong bì */
+/* Hiệu ứng mở phong bì & bung lá thư siêu mượt (Tối ưu GPU 60fps, không dùng filter blur) */
 @keyframes openEnvelope {
   0% {
-    transform: scale(0.7) translateY(60px) rotateX(15deg);
+    transform: scale(0.68) translateY(40px);
     opacity: 0;
   }
 
-  60% {
-    transform: scale(1.04) translateY(-6px) rotateX(0deg);
+  70% {
+    transform: scale(1.02) translateY(-4px);
     opacity: 1;
   }
 
   100% {
-    transform: scale(1) translateY(0) rotateX(0deg);
+    transform: scale(1) translateY(0);
     opacity: 1;
   }
 }
@@ -824,6 +858,7 @@ body {
 
   .card-title {
     font-size: 1.3rem;
+    margin-bottom: 22px;
   }
 
   .greeting-text {
@@ -863,7 +898,8 @@ body {
   }
 
   .modal-title {
-    font-size: 1.6rem;
+    font-size: 1.65rem;
+    padding: 0 20px;
   }
 
   .modal-footer {
@@ -871,7 +907,14 @@ body {
   }
 
   .letter-text {
-    font-size: 0.93rem;
-    padding: 20px 18px;
+    font-size: 1.15rem;
+    line-height: 32px;
+    padding: 18px 18px;
+    background-image: linear-gradient(to bottom,
+        transparent 31px,
+        rgba(233, 30, 140, 0.12) 31px,
+        rgba(233, 30, 140, 0.12) 32px);
+    background-size: 100% 32px;
+    background-position: 0 18px;
   }
 }
