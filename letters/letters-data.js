@@ -137,15 +137,11 @@ print("Có sài AI hong đó 👀:", ket_qua)`
     fullName: "Nguyễn Ngọc Đoan Nghi",
     aliases: ["Đoan Nghi", "Nghi"],
     type: "text",
-    content: `Đoan Ngi,
-
-Người ta hay nói "im lặng là vàng" — nhưng với Hà thì khác, mỗi lần em nói đều khiến người ta nhớ mãi, theo cách riêng thật đẹp.
-
-Nhân ngày 20/10, chúc em luôn giữ được nụ cười ấy — nụ cười mà tôi luôn thấy ấm lòng mỗi khi nhìn thấy 😊
-
-Hạnh phúc và khỏe mạnh nhé Hà!
-Gửi em thật nhiều hoa và yêu thương 🌹`
-  },
+    content: `Hello Đoan Ngi nha,
+    tuy là chưa nói chuyện với bạn bao giờ cứ coi như đây là lời chúc 20/10 ẩn danh he
+    20/10 chúc bạn luôn xinh, luôn được điểm A trong ngành mà bạn theo đuổi nè.
+    cuối lời mong mọi điều hạnh phúc đến với bạn`
+  },// xong
 
   // ──────────────────────────────────────────────────────────
   // 8. Hương
@@ -249,15 +245,9 @@ Mong Thư luôn là chính mình, luôn được sống theo cách Thư mong mu�
     fullName: "Nguyễn Thị Ngọc Trâm",
     aliases: ["Ngọc Trâm"],
     type: "text",
-    content: `Như thân mến,
-
-Biết không — đôi khi người ta cứ tìm kiếm những điều xa xôi, nhưng thứ đặc biệt nhất lại ở ngay bên cạnh. Em chính là điều đặc biệt đó với rất nhiều người.
-
-Ngày 20/10 năm nay, hãy nhớ rằng em được yêu thương nhiều hơn em nghĩ, được trân trọng nhiều hơn em biết.
-
-Chúc mừng ngày Phụ nữ Việt Nam! 🌷
-Gửi em thật nhiều hoa 💐`
-  },
+    content: `Hello Bạn,
+    Chúc bạn 20/10 vui vẻ, điểm A ngập tràng nha`
+  },// xong
 
   "PhungTuTram": {
     fullName: "Phùng Tú Trâm",
