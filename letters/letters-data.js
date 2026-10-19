@@ -215,6 +215,7 @@ Luôn yêu em 💗`
     content: `Gửi Thư,
 
 Hôm nay là 20/10 ngày phụ nữ Việt Nam. Tui đã nghĩ khá lâu không biết nên viết gì cho Thư, cuối cùng tui quyết định viết ra những điều đơn giản nhất.
+<<<<<<< HEAD
 Trước tiên, tui chúc Thư có một ngày 20/10 thật vui vẻ, luôn xinh đẹp, bình an và gặp được thật nhiều điều tốt đẹp trong cuộc sống. 
 Mong rằng những ngày tháng sau này, cậu sẽ luôn có đủ dũng khí để theo đuổi những điều mình thích, đủ mạnh mẽ để vượt qua những lúc khó khăn và luôn có những người thật lòng yêu thương, trân trọng cậu bên cạnh.
 Tui mong Thư sẽ luôn mỉm cười thật nhiều, sẽ luôn tìm được một lý do nhỏ bé nào đó để cảm thấy hạnh phúc. 
@@ -228,10 +229,17 @@ Mong Thư luôn là chính mình, luôn được sống theo cách Thư mong mu�
 20/10 vui vẻ.
 `
   },// xong
+=======
+Trước tiên, tui chúc Thư có một ngày 20/10 thật vui vẻ, luôn xinh đẹp, bình an và gặp được thật nhiều điều tốt đẹp trong cuộc sống. Mong rằng những ngày tháng sau này, cậu sẽ luôn có đủ dũng khí để theo đuổi những điều mình thích, đủ mạnh mẽ để vượt qua những lúc khó khăn và luôn có những người thật lòng yêu thương, trân trọng cậu bên cạnh.
+Tui mong Thư sẽ luôn mỉm cười thật nhiều, sẽ luôn tìm được một lý do nhỏ bé nào đó để cảm thấy hạnh phúc. Và nếu có những lúc mệt mỏi, mong Thư nhớ rằng Thư cũng xứng đáng được nghỉ ngơi, được quan tâm và được yêu thương.
+Thật ra, tui nghĩ những lời chúc tốt đẹp không nhất thiết chỉ dành riêng cho ngày 20/10. Tui hy vọng không chỉ hôm nay mà cả những ngày bình thường khác, Thư vẫn sẽ được đối xử bằng sự dịu dàng và chân thành mà Thư xứng đáng nhận được.
 
-  // ──────────────────────────────────────────────────────────
-  // 14. Như
-  // ──────────────────────────────────────────────────────────
+Cuối cùng, chúc Thư có một ngày 20/10 thật hạnh phúc. Mong Thư luôn là chính mình, luôn được sống theo cách Thư mong muốn và rồi sẽ gặp được thật nhiều điều khiến Thư cảm thấy cuộc sống này đáng yêu biết bao.
+
+20/10 vui vẻ.`
+  },
+>>>>>>> 95cf9a4f270d6d136812d331bf66529cd0c2f5c7
+
   "NguyenThiNgocTram": {
     fullName: "Nguyễn Thị Ngọc Trâm",
     aliases: ["Ngọc Trâm"],
@@ -246,9 +254,6 @@ Chúc mừng ngày Phụ nữ Việt Nam! 🌷
 Gửi em thật nhiều hoa 💐`
   },
 
-  // ──────────────────────────────────────────────────────────
-  // 15. Phương
-  // ──────────────────────────────────────────────────────────
   "PhungTuTram": {
     fullName: "Phùng Tú Trâm",
     aliases: ["Tú Trâm"],
