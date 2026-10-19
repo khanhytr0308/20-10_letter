@@ -38,10 +38,13 @@ cuối cùng là luôn đẹp gáiii nhen!!!`
     fullName: "Bùi Phạm Gia Hân",
     aliases: ["Gia Hân"],
     type: "text",
-    content: `Gửi Như Ý thân mến,
-
-Chúc bạn một ngày 20/10 ngập tràn niềm vui, nụ cười rạng rỡ và luôn thành công trên mọi nẻo đường! 🌸`
-  },
+    content: `Gửi Gia Hân,
+    Chúc bạn 20/10 vui vẻ nhé, tuy là có tiếp xúc và chơi cầu long chung với bạn từ 1 năm trước,nhưng hình như mình vân chưa nói chuyện với bạn lần nào 😅.
+  kết lời chúc bạn luôn thành công trên trên con đường của bạn, thành công trong việc học hành và tung bay như một quả tên lửa nhá 🚀\n
+    All best,
+    Bún Lèo
+    19/10/2026`
+  },// xong
 
   // ──────────────────────────────────────────────────────────
   // 3. Bích
@@ -62,15 +65,14 @@ Chúc bạn lun vv , học tập châm chỉ , gặp được nhiều điều ma
     fullName: "Trần Thị Ngọc Huyền",
     aliases: ["Ngọc Huyền", "Huyền"],
     type: "text",
-    content: `Chi ơi,
+    content: `𝐆ử𝐢 𝐇𝐮𝐲ề𝐧,
 
-Mỗi lần gặp em, tôi lại thấy lòng nhẹ hơn một chút — có lẽ vì em luôn mang theo năng lượng tích cực mà không nhận ra điều đó.
+𝐇ô𝐦 𝐧𝐚𝐲 𝐥à 𝟐𝟎/𝟏𝟎 á! 💐, 𝐆ử𝐢 𝐇𝐮𝐲ề𝐧 𝐛ứ𝐜 𝐭𝐡ư 𝐧à𝐲. 𝐂𝐡ú𝐜 𝐇𝐮𝐲ề𝐧 𝐥ú𝐜 𝐧à𝐨 𝐜ũ𝐧𝐠 𝐤𝐡ỏ𝐞 𝐤𝐡ắ𝐧, 𝐦ạ𝐧𝐡 𝐦ẽ 𝐯à 𝐯𝐮𝐢 𝐯ẻ ☀️✨.
 
-Hôm nay là ngày của em. Không cần phải làm gì lớn lao, không cần phải hoàn hảo — chỉ cần được là chính mình là đủ rồi, Chi ạ 🌺
+𝐁𝐢ế𝐭 𝐭í𝐧𝐡 𝐇𝐮𝐲ề𝐧 𝐦ạ𝐧𝐡 𝐦ẽ, 𝐥ú𝐜 𝐧à𝐨 𝐜ũ𝐧𝐠 𝐠𝐚𝐥ă𝐧𝐠, 𝐜𝐡𝐮 đá𝐨 𝐥𝐨 𝐥ắ𝐧𝐠 𝐜𝐡𝐨 𝐧𝐠ườ𝐢 𝐭𝐚 𝐦à 𝐧𝐡𝐢ề𝐮 𝐤𝐡𝐢 𝐪𝐮ê𝐧 𝐦ấ𝐭 𝐧𝐠𝐡ĩ 𝐜𝐡𝐨 𝐛ả𝐧 𝐭𝐡â𝐧 ❤️. 𝐂ơ 𝐦à 𝐦ạ𝐧𝐡 𝐦ẽ 𝐭ớ𝐢 đâ𝐮 𝐭𝐡ì 𝐭ớ𝐢 𝐜ũ𝐧𝐠 𝐩𝐡ả𝐢 𝐪𝐮𝐚𝐧 𝐭â𝐦 𝐜𝐡𝐨 𝐜𝐡í𝐧𝐡 𝐛ả𝐧 𝐭𝐡â𝐧 𝐦ì𝐧𝐡 𝐧𝐡𝐢ề𝐮 𝐡ơ𝐧 𝐧𝐡𝐚, 𝐭𝐮𝐢 𝐜𝐡ú𝐜 𝐇𝐮𝐲ề𝐧 𝐥ú𝐜 𝐧à𝐨 𝐜ũ𝐧𝐠 𝐭𝐡à𝐧𝐡 𝐜ô𝐧𝐠 𝐭𝐫𝐨𝐧𝐠 𝐜ô𝐧𝐠 𝐯𝐢ệ𝐜 💼, 𝐡ạ𝐧𝐡 𝐩𝐡ú𝐜 𝐯à 𝐡ọ𝐜 𝐭𝐡𝐢ệ𝐭 𝐠𝐢ỏ𝐢 𝐧𝐡𝐚 🎓🌟.
 
-Trân trọng và yêu quý,
-Người bạn luôn ở đây 🌸`
-  },
+𝐂𝐡ú𝐜 𝐇𝐮𝐲ề𝐧 𝟐𝟎/𝟏𝟎 𝐭𝐡𝐢ệ𝐭 𝐯𝐮𝐢 𝐯ẻ, 𝐭𝐫ọ𝐧 𝐯ẹ𝐧 𝐯à 𝐥ú𝐜 𝐧à𝐨 𝐜ũ𝐧𝐠 𝐥à 𝐜𝐡í𝐧𝐡 𝐦ì𝐧𝐡! 🍀🎁🔥`
+  },// xong
 
   // ──────────────────────────────────────────────────────────
   // 5. Dung
@@ -94,17 +96,39 @@ Mừng ngày tuyệt đẹp hai mươi tháng mười`
     fullName: "Ngô Triệu Mẫn",
     aliases: ["Triệu Mẫn", "Mẫn"],
     type: "text",
-    content: `Gửi em yêu quý,
+    content: `Hello chị Mẫn giữa trời đông cô đơn,
+    sài AI giải là gận luôn á nha
+MA_TRAN = [
+    ['A', 'B', 'C', 'D', 'E', 'F', 'G'], 
+    ['H', 'I', 'J', 'K', 'L', 'M', 'N'],
+    ['O', 'P', 'Q', 'R', 'S', 'T', 'U'],
+    ['V', 'W', 'X', 'Y', 'Z', '0', '1'],
+    ['2', '3', '4', '5', '6', '7', '8'],
+    ['9', ' ', '/', '!', '?', '#', '*']
+]
 
-Bức thư này được viết dành riêng cho em — người đặc biệt đang đọc những dòng chữ này.
+DANH_SACH_TOA_DO = [
+    [0, 2], [1, 0], [2, 6], [0, 2], [5, 1],      
+    [0, 2], [1, 0], [1, 1], [5, 1],              
+    [4, 0], [3, 5], [5, 2], [3, 6], [4, 0], [5, 1],
+    [3, 0], [2, 6], [1, 1], [5, 1],               
+    [3, 0], [0, 4]                                
+]
 
-Hôm nay là ngày 20/10, ngày của những người phụ nữ phi thường. Và em — dù em có tin hay không — em chính là một trong số đó 🌟
+def giai_ma(toa_do_list, ma_tran):
+    #GỢI Ý:
+    #Mỗi phần tử trong toa_do_list là một cặp [hang, cot].
+    #Hãy lấy ký tự tương ứng từ ma_tran[hang][cot] và ghép lại!
 
-Cảm ơn em vì đã luôn cố gắng, luôn quan tâm và luôn lan toả yêu thương đến mọi người xung quanh.
+    thong_diep = ""
+    # viet code phia duoi nha:
 
-Chúc mừng ngày Phụ nữ em nhé! 🌸
-Mãi yêu em 💌`
-  },
+    return thong_diep
+
+# CHẠY THỬ
+ket_qua = giai_ma(DANH_SACH_TOA_DO, MA_TRAN)
+print("Có sài AI hong đó 👀:", ket_qua)`
+  }, // xong
 
   // ──────────────────────────────────────────────────────────
   // 7. Hà
@@ -144,15 +168,16 @@ Mọi điều tốt đẹp nhất sẽ đến với em!!!! Nhuw Ngocj`
     fullName: "Nguyễn Bảo Ngọc",
     aliases: ["Bảo Ngọc"],
     type: "text",
-    content: `Lan yêu quý ơi,
+    content: `𝐆ử𝐢 𝐍𝐠ọ𝐜 𝐧𝐡𝐞𝐞! 💖,
 
-Hoa lan nở đẹp không phải vì được chăm sóc đặc biệt, mà vì trong bản thân nó đã mang sẵn vẻ đẹp tinh tế từ bên trong.
+𝐇ô𝐦 𝐧𝐚𝐲 𝐥à 𝟐𝟎/𝟏𝟎 𝐫ồ𝐢 𝐧è! 💐 𝐓𝐮𝐢 𝐠ử𝐢 𝐥ờ𝐢 𝐜𝐡ú𝐜 𝐭ớ𝐢 𝐍𝐠ọ𝐜 𝐧è, 𝐜𝐡ú𝐜 𝐍𝐠ọ𝐜 𝐥ú𝐜 𝐧à𝐨 𝐜ũ𝐧𝐠 𝐱𝐢𝐧𝐡 𝐱ắ𝐧, 𝐯𝐮𝐢 𝐯ẻ 𝐯ớ𝐢 
+𝐠𝐢ữ 𝐡𝐨à𝐢 𝐜á𝐢 𝐧é𝐭 𝐝ễ 𝐭𝐡ươ𝐧𝐠, đá𝐧𝐠 𝐲ê𝐮 𝐧à𝐲 𝐧𝐡𝐚 ✨.
 
-Em cũng vậy — Lan của tôi. Dù trong hoàn cảnh nào, em vẫn tỏa sáng theo cách rất riêng, rất Lan.
+𝐂ả𝐦 ơ𝐧 𝐍𝐠ọ𝐜 𝐯ì 𝐥ú𝐜 𝐧à𝐨 𝐜ũ𝐧𝐠 𝐦𝐚𝐧𝐠 𝐧ă𝐧𝐠 𝐥ượ𝐧𝐠 𝐭í𝐜𝐡 𝐜ự𝐜 𝐯ớ𝐢 𝐧ụ 𝐜ườ𝐢 𝐭ươ𝐢 🌸 𝐜𝐡𝐨 𝐦ọ𝐢 𝐧𝐠ườ𝐢 𝐱𝐮𝐧𝐠 𝐪𝐮𝐚𝐧𝐡. 
+𝐂𝐡ú𝐜 𝐍𝐠ọ𝐜 𝐜ô𝐧𝐠 𝐯𝐢ệ𝐜, 𝐡ọ𝐜 𝐡à𝐧𝐡 𝐠ì 𝐜ũ𝐧𝐠 𝐬𝐮ô𝐧 𝐬ẻ, 𝐠ặ𝐩 𝐭𝐨à𝐧 𝐜𝐡𝐮𝐲ệ𝐧 𝐦𝐚𝐲 𝐦ắ𝐧 𝐯à 𝐥ú𝐜 𝐧à𝐨 𝐜ũ𝐧𝐠 đượ𝐜 𝐜ư𝐧𝐠 𝐜𝐡𝐢ề𝐮, 𝐡ạ𝐧𝐡 𝐩𝐡ú𝐜 𝐧𝐡𝐚 🍀🥰.
 
-Chúc mừng ngày 20/10! Cảm ơn em vì đã là em 🌸
-Với tất cả yêu thương 💌`
-  },
+𝐂𝐡ú𝐜 𝐍𝐠ọ𝐜 𝐜ó 𝐦ộ𝐭 𝐧𝐠à𝐲 𝟐𝟎/𝟏𝟎 𝐭𝐡𝐢ệ𝐭 𝐭𝐫ọ𝐧 𝐯ẹ𝐧 𝐯à 𝐭𝐫ú𝐧𝐠 𝐩𝐡ó𝐜 𝐧𝐡ữ𝐧𝐠 đ𝐢ề𝐮 𝐍𝐠ọ𝐜 𝐡ằ𝐧𝐠 𝐦𝐨𝐧𝐠 ướ𝐜! 🎉🎁🎀`
+  },// xong
 
   // ──────────────────────────────────────────────────────────
   // 10. Linh
@@ -161,15 +186,11 @@ Với tất cả yêu thương 💌`
     fullName: "Lê Nguyễn Ngọc Nhi",
     aliases: ["Ngọc Nhi", "Nhi"],
     type: "text",
-    content: `Linh ơi,
+    content: `gửi bạn nhi,
 
-Có những người bước vào cuộc đời ta thật nhẹ nhàng, nhưng lại thay đổi rất nhiều thứ — em là người như thế.
-
-Ngày 20/10 này, tôi muốn nói thật to rằng: Tôi biết ơn vì có em. Sự thông minh, sự tận tâm và trái tim ấm áp của em là những món quà quý giá mà em mang đến cho tất cả mọi người.
-
-Chúc mừng ngày Phụ nữ, Linh! ✨
-Trân trọng gửi em 💕`
-  },
+chúc b có một ngày 20/10 thật vui vẻ. 
+mong b được những điều mà mình muốn nhen`
+  },// xong
 
   // ──────────────────────────────────────────────────────────
   // 11. Mai
@@ -178,15 +199,14 @@ Trân trọng gửi em 💕`
     fullName: "Võ Hông Nhung",
     aliases: ["Nhung", "Hồng Nhung"],
     type: "text",
-    content: `Gửi Mai,
+    content: `Gửi Nhung nhân ngày 20/10,
 
-Giống như hoa mai nở vào đúng thời điểm nó cần — em cũng vậy. Luôn xuất hiện đúng lúc, đúng chỗ, với đúng những gì mà mọi người cần.
-
-Hôm nay ngày 20/10, tôi muốn tặng lại cho em điều mà em hay tặng cho người khác: sự quan tâm chân thành và lời nhắn nhủ rằng em rất tuyệt vời 🌼
-
-Chúc mừng ngày Phụ nữ Mai nhé!
-Gửi em đầy ắp yêu thương 🌸`
-  },
+Theo Nhung thì ý nghĩa của ngày 20/10 là gì. Theo MDAD thấy thì nó là ngày tôn vinh những nét đẹp và sự cống hiến của phụ nữ Việt Nam, 
+ngoài ra thì nó còn là ngày mà mấy đứa con trai tụi tui viết thư xong tặng quà cho những người con gái mà tụi tui thấy đặc biệt. MDAD nói vậy Nhung đừng hiểu nhầm gì nha không phải là tui tỏ tình gì đâu tui chỉ muốn nói là nữ trong lớp mình ai cũng có nét đặc biệt riêng hết Nhung cũng là 1 người tui thấy rất đặc biệt .
+ Nhung là một người theo tui thấy rất là lowkey, hiền và xinh đẹp, Nhung cũng là 1 người có 1 nguồn năng lượng tích cực lúc nào tui cũng thấy Nhung đối xử với mọi thứ xung quanh rất là dịu dàng cho tới hiện tại thì tui chưa thấy Nhung cáu gắt với ai hết á. 
+ Nhân ngày 20/10 thì MDAD xin chúc Nhung sẽ luôn giữa được sự dịu dàng này, luôn luôn xinh đẹp và rực rỡ và mong mọi thứ xung quanh sẽ luôn đối xử dịu dàng với Nhung nhaa. 
+ Ps đừng có cho ai coi cái này nha mắc cỡ lắm, lúc bạn đọc là tui sẽ quan sát bạn đó nhớ nha🙏💀`
+  }, // xong
 
   // ──────────────────────────────────────────────────────────
   // 12. My
@@ -195,15 +215,11 @@ Gửi em đầy ắp yêu thương 🌸`
     fullName: "Trần Thị Minh Thảo",
     aliases: ["Minh Thảo", "Thảo"],
     type: "text",
-    content: `My yêu,
+    content: `văn ăn năn,
 
-Tên em ngắn gọn nhưng ấn tượng — giống hệt em: không ồn ào, không phô trương, nhưng ai gặp rồi cũng nhớ mãi.
-
-Nhân ngày 20/10, tôi chỉ muốn nói một điều thôi: Em thật sự rất đặc biệt, theo cách mà không ai có thể thay thế được.
-
-Chúc mừng ngày Phụ nữ Việt Nam!
-Luôn yêu em 💗`
-  },
+chúc bạn 20/10 ngày càng xinh gái, 
+hãy luôn là chính mình và chúc bạn có nhiều thành công trong tương lai`
+  },// xong
 
   // ──────────────────────────────────────────────────────────
   // 13. Ngân
@@ -247,15 +263,11 @@ Gửi em thật nhiều hoa 💐`
     fullName: "Phùng Tú Trâm",
     aliases: ["Tú Trâm"],
     type: "text",
-    content: `Phương yêu quý,
+    content: `hong bíc nói j hơn,
 
-Mỗi hướng đều có vẻ đẹp riêng — và Phương của tôi cũng vậy. Dù đứng ở góc độ nào, em cũng đều toả ra điều gì đó thật đẹp: sự kiên định, sự ấm áp, hay đơn giản là nụ cười của em.
-
-Chúc mừng ngày 20/10! Chúc em luôn tìm được phương hướng đúng đắn và hạnh phúc trên con đường đó 🧭
-
-Mãi yêu và trân trọng em,
-Người gửi thư 💌`
-  },
+chúc b có một ngày 20/10 thật là vui vẻ và hạnh phúc.
+Chúc bạn lun học thật tốt đạt nhiều mong muốn mà bạn đang theo đuổi nhen`
+  }, // xong
 
   // ──────────────────────────────────────────────────────────
   // 16. Thảo
@@ -264,15 +276,22 @@ Người gửi thư 💌`
     fullName: "Nguyễn Phạm Thuỳ Trinh",
     aliases: ["Thuỳ Trinh", "Trinh"],
     type: "text",
-    content: `Thảo ơi,
+    content: `Chúc 20/11 Hạnh phúc,
 
-Người ta hay nói "tốt gỗ hơn tốt nước sơn" — và Thảo chính là người có cả hai: đẹp từ bên trong lẫn bên ngoài, chân thành từ lời nói đến hành động.
+Dear 𝑻𝒉𝒖̀𝒚 𝑻𝒓𝒊𝒏𝒉,
 
-Hôm nay ngày 20/10, tôi muốn gửi tặng Thảo thứ duy nhất xứng đáng với em: lời cảm ơn chân thành vì em đã luôn là em — tốt bụng, chăm chỉ và đáng yêu như vậy.
+Lá thư nì gửi tới Trinh vào ngày 20/10💐💐 , Tui chúc Trinh lúc nào cũng tươi tắn, xinh xắn như bông 🌹🌺🌷💮
+và tràn đầy năng lượng như mặt trời 🌞, lúc nào cũng cười thiệt là nhiều không có chịn gì 
+buồn cái gì hết trơn.
 
-Chúc mừng ngày Phụ nữ! 🌿
-Gửi em tất cả yêu thương 💚`
-  },
+Tính Trinh vừa hiền lành, vừa dễ thương gần gũi nên mang lại nhiều cái tích cực cho mọi người á mong Trinh 
+nhận lại những thứ tốt nhất đến với Trinh 🎁. Chúc Trinh học hành gì cũng hanh thông, gặp nhiều may mắn 
+và lúc nào cũng có người cưng chiều, trân trọng!!.
+
+Chúc Trinh có một ngày 20/10 thiệt vui, nhận được thiệt nhiều là nhiều quà nha.
+
+𝑺𝒂𝒚 𝒃𝒚𝒆𝒆!!🌸🌸🌸🌸`
+  }, // xong
 
   // ──────────────────────────────────────────────────────────
   // 17. Thư
@@ -281,15 +300,15 @@ Gửi em tất cả yêu thương 💚`
     fullName: "Nguyễn Ngọc Tường Vy",
     aliases: ["Tường Vy"],
     type: "text",
-    content: `Gửi Thư — cũng là gửi thư 😊,
+    content: `Gửi Tường Vy nè,
 
-Trùng hợp duyên dáng khi một bức thư được gửi đến người tên Thư, phải không?
-
-Thư ơi, tôi muốn em biết rằng: giống như một bức thư viết tay — em mang trong mình sự chân thành, sự tỉ mỉ và cái ấm áp mà không công nghệ nào có thể thay thế được.
-
-Chúc mừng ngày 20/10 — ngày của em, ngày của những người phụ nữ tuyệt vời! 📬
-Yêu em nhiều lắm 💌`
-  },
+Lời đầu tiên mình chúc bạn 20/10 vui vẻ nha, trong lớp thiệt sự có thể là mình chưa bao giờ nói chuyện với bạn luôn á 🥲.
+tui với bạn như kiểu đối lập vậy á tui thì ồn quá trời, chắc hơi lạc đề ời he :)))
+cuối lời mình xin chúc bạn luôn xinh nè, luôn mạnh mẽ khi gặp thách thức 20/10 vui vẻ nha 🥳\n
+mong mọi điều tốt lành
+      Bún Lèo
+    19/10/2026`
+  },// xong 
 
   // ──────────────────────────────────────────────────────────
   // 18. Trang
@@ -298,10 +317,12 @@ Yêu em nhiều lắm 💌`
     fullName: "Nguyễn Lê Khánh Vy",
     aliases: ["Khánh Vy"],
     type: "text",
-    content: `Điều bất ngờ dành cho bạn ở đây nè 
-    (Nhớ Đăng Nhập Bằng Mail CTU Nhé): \n
-    Link: https://www.olp.vn/tin-t%E1%BB%A9c/olympic-icpc/th%C3%B4ng-b%C3%A1o`
-  },
+    content: `Gửi Khánh Vy.
+   Nhân ngày 20/10. MDAD chúc bn có một ngày 20/10 thật là dui dẻ và tràn đầy năng lượng, MDAD bật mí cho bạn là hình ảnh bạn trong bộ não này của tui lúc nào cũng rất là mạnh mẽ, 
+   rạng rỡ và tràn đầy năng lượng đó nên mong bạn lúc nào cũng giữa được nguồn năng lượng tích cực này của bạn nha. 
+   Nhân tiện đây thì đám con trai tụi tui cũng có chút quà tặng bn, mong khi bạn nhìn vào cái móc khoá này thì lúc nào cũng nhớ tới tấm lòng của tụi tui nha. 
+   Ps đừng cho ai đọc cái này nghe mắc cỡ lắm sống chết gì cũng đừng nói nghe chưa!? 💀🙏`
+  },// xong
 
   // ──────────────────────────────────────────────────────────
   // 19. Vy
@@ -316,7 +337,7 @@ Hôm nay là 20/10 đó!
 Chúc bà có một ngày 20/10 thật là vui vẻ, tràn đầy sắc màu, 
 tiền luôn xuất hiện trong túi và không bao giờ cạn, 
 cũng như là đạt nhiều con điểm A ở tất cả các môn nha. 💗`
-  },
+  }, // xong
 
   // ──────────────────────────────────────────────────────────
   // 20. Yến
@@ -325,15 +346,16 @@ cũng như là đạt nhiều con điểm A ở tất cả các môn nha. 💗`
     fullName: "Nguyễn Ngọc Phi Yến",
     aliases: ["Phi Yến", "Yến"],
     type: "text",
-    content: `Yến yêu quý,
+    content: `Hello bạn nha,
 
-Loài chim én báo hiệu mùa xuân — còn Yến của tôi thì báo hiệu điều gì? Tôi nghĩ là sự ấm áp, là tiếng cười, là những buổi tụ họp vui vẻ mà thiếu em thì sẽ kém vui đi một nửa.
+Biết gì hong hôm nay là 20/10 rồi á, mới đây nhanh ghê ngày nào mình còn học tiếng Anh mà giờ đổi qua mấy cái quái quỷ gì rồi :)))
+Bún Lèo cũng hong biết nói gì thêm nói chung là chúc bạn thành công vững vàng luôn có nhiều điểm A trong học tập nhé.\n
+Best Wishes,
+  Bún Lèo
+19/10/2026
 
-Nhân ngày 20/10, tôi chỉ muốn nói: Cảm ơn em vì đã luôn là nguồn năng lượng tích cực cho tất cả mọi người xung quanh.
-
-Chúc mừng ngày Phụ nữ Việt Nam, Yến nhé! 🐦
-Mãi yêu em 💌`
-  },
+`
+  }, // xong 
 
   // ──────────────────────────────────────────────────────────
   // 21. Admin (Khánh)
