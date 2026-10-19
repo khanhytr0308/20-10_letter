@@ -25,13 +25,11 @@ window.lettersData = {
     fullName: "Tiêu Bùi Như Ý",
     aliases: ["tiêu bùi như ý", "tieu bui nhu y", "bùi như ý", "bui nhu y", "như ý", "nhu y", "ý", "y"],
     type: "text",
-    content: `,
-
-Nhân dịp Happi Woman's Day, 
+    content: `Happi Woman's Day,
 chúc Như Ý có một ngày thật là vui vẻ, tận hưởng trọn vẹn, tiền lúc nào cũng vô túi ào ào, 
 đạt mọi điểm A ở các kì ở tất cả các môn, cũng như là lụm học bổng dài dài, 
 cuối cùng là luôn đẹp gáiii nhen!!!`
-  },
+  },// xong
 
   // ──────────────────────────────────────────────────────────
   // 2. Nguyễn Như Ý (Ví dụ trường hợp trùng tên nhưng khác họ tên lót)
@@ -52,15 +50,10 @@ Chúc bạn một ngày 20/10 ngập tràn niềm vui, nụ cười rạng rỡ 
     fullName: "Võ Ngọc Hân",
     aliases: ["Ngọc Hân"],
     type: "text",
-    content: `Gửi Bích thân mến,
+    content: `Chúc mừng 20/10 vv,
 
-Em là người hiếm có — vừa mạnh mẽ, vừa dịu dàng, vừa hài hước lại đầy ắp sự quan tâm.
-
-Ngày 20/10 năm nay, hãy dành trọn ngày này cho bản thân em. Em xứng đáng được hạnh phúc, được yêu thương và được nghỉ ngơi 🌷
-
-Chúc mừng sinh nhật... à nhầm — Chúc mừng ngày Phụ nữ! 😄
-Thân thương gửi đến Bích 💗`
-  },
+Chúc bạn lun vv , học tập châm chỉ , gặp được nhiều điều may mắn`
+  },// xong
 
   // ──────────────────────────────────────────────────────────
   // 4. Chi
@@ -86,15 +79,13 @@ Người bạn luôn ở đây 🌸`
     fullName: "Nguyễn Ngọc Mai",
     aliases: ["Ngọc Mai", "Mai"],
     type: "text",
-    content: `Gửi Dung,
+    content: `Dear Mai,
 
-Tôi vẫn hay nghĩ về những lần em cố gắng mà không ai biết — những đêm khuya, những buổi sáng sớm, những khi mọi thứ không theo ý muốn mà em vẫn tiếp tục.
-
-Hôm nay — ngày 20/10 — là lúc để tôi nói: Tôi thấy tất cả những điều đó, và tôi trân trọng em vô cùng 💪
-
-Chúc mừng ngày Phụ nữ Việt Nam!
-Gửi em bao nhiêu là yêu thương 💕`
-  },
+Hoa đơm kết quả ngọt lành
+Nắng thu dịu nhẹ long lanh góc trời
+Nụ cười rạng rỡ thắm tươi 
+Mừng ngày tuyệt đẹp hai mươi tháng mười`
+  }, // xong 
 
   // ──────────────────────────────────────────────────────────
   // 6. Em (từ khoá phổ thông)
@@ -139,15 +130,12 @@ Gửi em thật nhiều hoa và yêu thương 🌹`
     fullName: "Huỳnh Diệp Như Ngọc",
     aliases: ["Như Ngọc"],
     type: "text",
-    content: `Gửi Hương,
+    content: `Chúc em 20/10 vv hp,
 
-Tên em đẹp như chính con người em — nhẹ nhàng, thơm mát, và luôn để lại dấu ấn dù chỉ thoáng qua.
-
-Ngày 20/10 này, tôi muốn em biết: em không chỉ là người phụ nữ của gia đình, của công việc — em còn là em, với ước mơ và cảm xúc riêng xứng đáng được trân trọng.
-
-Chúc mừng ngày Phụ nữ Việt Nam, Hương nhé! 🌺
-Yêu em 💗`
-  },
+Nhân dịp 20/10, anh muốn gửi lời chúc trân thành nhất đến em. Chúc em luôn xin đẹp, vui vẻ, 
+hạnh phúc và đạt được nhìu dự định trong cuộc sống
+Mọi điều tốt đẹp nhất sẽ đến với em!!!! Nhuw Ngocj`
+  }, // xong
 
   // ──────────────────────────────────────────────────────────
   // 9. Lan
@@ -321,14 +309,12 @@ Yêu em nhiều lắm 💌`
     fullName: "Trần Lê Yến Vy",
     aliases: ["Yến Vy"],
     type: "text",
-    content: `Vy ơi,
+    content: `Hello!,
 
-Ngắn gọn, tinh tế, và đầy cá tính — tên em và con người em là một.
-
-Tôi luôn ngưỡng mộ cách em làm mọi thứ: dù là công việc, dù là những điều nhỏ nhặt hàng ngày — em đều làm với sự tận tâm và phong cách riêng không ai bắt chước được.
-
-Ngày 20/10 này, chúc em luôn tỏa sáng theo phong cách của riêng Vy! ✨
-Gửi em thật nhiều yêu thương 💗`
+Hôm nay là 20/10 đó! 
+Chúc bà có một ngày 20/10 thật là vui vẻ, tràn đầy sắc màu, 
+tiền luôn xuất hiện trong túi và không bao giờ cạn, 
+cũng như là đạt nhiều con điểm A ở tất cả các môn nha. 💗`
   },
 
   // ──────────────────────────────────────────────────────────
