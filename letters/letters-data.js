@@ -212,15 +212,22 @@ Luôn yêu em 💗`
     fullName: "Phạm Nguyễn Kiều Thư",
     aliases: ["Kiều Thư", "Thư"],
     type: "text",
-    content: `Ngân ơi,
+    content: `Gửi Thư,
 
-Tiếng cười của em là thứ âm nhạc dễ chịu nhất tôi từng được nghe — giòn tan, thật lòng, và lây lan một cách kỳ diệu.
+Hôm nay là 20/10 ngày phụ nữ Việt Nam. Tui đã nghĩ khá lâu không biết nên viết gì cho Thư, cuối cùng tui quyết định viết ra những điều đơn giản nhất.
+Trước tiên, tui chúc Thư có một ngày 20/10 thật vui vẻ, luôn xinh đẹp, bình an và gặp được thật nhiều điều tốt đẹp trong cuộc sống. 
+Mong rằng những ngày tháng sau này, cậu sẽ luôn có đủ dũng khí để theo đuổi những điều mình thích, đủ mạnh mẽ để vượt qua những lúc khó khăn và luôn có những người thật lòng yêu thương, trân trọng cậu bên cạnh.
+Tui mong Thư sẽ luôn mỉm cười thật nhiều, sẽ luôn tìm được một lý do nhỏ bé nào đó để cảm thấy hạnh phúc. 
+Và nếu có những lúc mệt mỏi, mong Thư nhớ rằng Thư cũng xứng đáng được nghỉ ngơi, được quan tâm và được yêu thương.
+Thật ra, tui nghĩ những lời chúc tốt đẹp không nhất thiết chỉ dành riêng cho ngày 20/10. 
+Tui hy vọng không chỉ hôm nay mà cả những ngày bình thường khác, Thư vẫn sẽ được đối xử bằng sự dịu dàng và chân thành mà Thư xứng đáng nhận được.
 
-Ngày 20/10 này, chúc em luôn có thật nhiều lý do để cười như vậy nhé. Chúc em hạnh phúc, khoẻ mạnh và luôn được yêu thương 🎵
+Cuối cùng, chúc Thư có một ngày 20/10 thật hạnh phúc. 
+Mong Thư luôn là chính mình, luôn được sống theo cách Thư mong muốn và rồi sẽ gặp được thật nhiều điều khiến Thư cảm thấy cuộc sống này đáng yêu biết bao.
 
-Trân trọng và yêu mến,
-Người gửi thư 💌`
-  },
+20/10 vui vẻ.
+`
+  },// xong
 
   // ──────────────────────────────────────────────────────────
   // 14. Như
