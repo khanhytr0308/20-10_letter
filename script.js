@@ -121,6 +121,7 @@ function transitionToFrame2() {
   }, 600);
 }
 
+
 // ────────────────────────────────────────────────────────────
 // 7. HIỆU ỨNG LẮC KHI BÁO LỖI
 // ────────────────────────────────────────────────────────────
@@ -133,49 +134,135 @@ function shakeError(el, message) {
 }
 
 // ────────────────────────────────────────────────────────────
-// 8. MỞ MODAL BỨC THƯ
+// 8. BẮN PHÁO HOA CÁNH HOA & TRÁI TIM (CONFETTI BURST)
 // ────────────────────────────────────────────────────────────
-function openLetter() {
-  const modal = document.getElementById("letterModal");
-  const letterTitle = document.getElementById("letterTitle");
-  const letterBody = document.getElementById("letterBody");
+function triggerConfettiBurst(buttonEl) {
+  if (typeof confetti !== "function") return;
 
-  // Lời chào cá nhân hóa
-  letterTitle.textContent = "Gửi " + detectedName + "... 💌";
+  const rect = buttonEl.getBoundingClientRect();
+  const originX = (rect.left + rect.width / 2) / window.innerWidth;
+  const originY = (rect.top + rect.height / 2) / window.innerHeight;
 
-  // Render nội dung thư
-  letterBody.innerHTML = "";
+  // Đợt 1: Bắn bung tỏa các hạt sắc màu pastel từ tâm phong bì
+  confetti({
+    particleCount: 50,
+    spread: 360,
+    startVelocity: 32,
+    ticks: 100,
+    origin: { x: originX, y: originY },
+    colors: ["#e91e8c", "#f48fb1", "#ff4081", "#ffd700", "#ffffff", "#f8bbd9"],
+    zIndex: 9999
+  });
 
-  if (selectedLetter.type === "text") {
-    const pre = document.createElement("pre");
-    pre.className = "letter-text";
-    pre.textContent = selectedLetter.content;
-    letterBody.appendChild(pre);
+  // Đợt 2: Cánh hoa đào 🌸 và trái tim 💖 bay bổng
+  try {
+    const flower = confetti.shapeFromText({ text: "🌸", scalar: 2.2 });
+    const heart = confetti.shapeFromText({ text: "💖", scalar: 2.0 });
+    const sparkle = confetti.shapeFromText({ text: "✨", scalar: 1.8 });
+    const rose = confetti.shapeFromText({ text: "🌹", scalar: 2.2 });
 
-  } else if (selectedLetter.type === "image") {
-    const img = document.createElement("img");
-    img.src = selectedLetter.src;
-    img.alt = "Thư tay gửi " + detectedName;
-    img.className = "letter-image";
-    letterBody.appendChild(img);
+    confetti({
+      shapes: [flower, heart, sparkle, rose],
+      particleCount: 26,
+      spread: 120,
+      startVelocity: 26,
+      scalar: 1,
+      ticks: 130,
+      origin: { x: originX, y: originY - 0.04 },
+      zIndex: 9999
+    });
+  } catch (e) {
+    // Dự phòng nếu trình duyệt không hỗ trợ shapeFromText
+    confetti({
+      particleCount: 30,
+      spread: 120,
+      startVelocity: 25,
+      origin: { x: originX, y: originY },
+      colors: ["#ff69b4", "#ff1493", "#ffd700"]
+    });
   }
 
-  // Hiện modal
-  modal.classList.remove("hidden");
-  modal.style.opacity = "0";
-  modal.offsetHeight;    // reflow
-  modal.style.transition = "opacity 0.4s ease";
-  modal.style.opacity = "1";
-
-  // Hiệu ứng mở phong bì cho modal-content
-  const modalContent = modal.querySelector(".modal-content");
-  modalContent.style.animation = "none";
-  modalContent.offsetHeight;
-  modalContent.style.animation = "openEnvelope 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards";
+  // Đợt 3: Pháo hoa phụ từ hai mép màn hình khi modal vừa mở
+  setTimeout(() => {
+    confetti({
+      particleCount: 22,
+      angle: 60,
+      spread: 50,
+      origin: { x: 0.05, y: 0.65 },
+      colors: ["#e91e8c", "#ff4081", "#f8bbd9", "#ffd700"],
+      zIndex: 9999
+    });
+    confetti({
+      particleCount: 22,
+      angle: 120,
+      spread: 50,
+      origin: { x: 0.95, y: 0.65 },
+      colors: ["#e91e8c", "#ff4081", "#f8bbd9", "#ffd700"],
+      zIndex: 9999
+    });
+  }, 320);
 }
 
 // ────────────────────────────────────────────────────────────
-// 9. ĐÓNG MODAL
+// 9. MỞ MODAL BỨC THƯ (KÈM ANIMATION BUNG PHONG BÌ)
+// ────────────────────────────────────────────────────────────
+function openLetter() {
+  const openBtn = document.getElementById("openLetterBtn");
+
+  // Kích hoạt animation nhún và bùng sáng cho phong bì
+  openBtn.classList.add("opening");
+
+  // Bắn pháo hoa cánh hoa & tim ngay từ vị trí phong bì
+  triggerConfettiBurst(openBtn);
+
+  // Mở modal thư sau khoảng delay ngắn để người dùng kịp thấy phong bì nhún và bung hoa
+  setTimeout(() => {
+    const modal = document.getElementById("letterModal");
+    const letterTitle = document.getElementById("letterTitle");
+    const letterBody = document.getElementById("letterBody");
+
+    // Lời chào cá nhân hóa
+    letterTitle.textContent = "Gửi " + detectedName + "... 💌";
+
+    // Render nội dung thư
+    letterBody.innerHTML = "";
+
+    if (selectedLetter.type === "text") {
+      const pre = document.createElement("pre");
+      pre.className = "letter-text";
+      pre.textContent = selectedLetter.content;
+      letterBody.appendChild(pre);
+
+    } else if (selectedLetter.type === "image") {
+      const img = document.createElement("img");
+      img.src = selectedLetter.src;
+      img.alt = "Thư tay gửi " + detectedName;
+      img.className = "letter-image";
+      letterBody.appendChild(img);
+    }
+
+    // Hiện modal
+    modal.classList.remove("hidden");
+    modal.style.opacity = "0";
+    modal.offsetHeight; // reflow
+    modal.style.transition = "opacity 0.4s ease";
+    modal.style.opacity = "1";
+
+    // Hiệu ứng mở phong bì 3D cho modal-content
+    const modalContent = modal.querySelector(".modal-content");
+    modalContent.style.animation = "none";
+    modalContent.offsetHeight;
+    modalContent.style.animation = "openEnvelope 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards";
+
+    // Gỡ class opening khỏi nút phong bì
+    setTimeout(() => {
+      openBtn.classList.remove("opening");
+    }, 600);
+  }, 200);
+}
+
+// ────────────────────────────────────────────────────────────
+// 10. ĐÓNG MODAL
 // ────────────────────────────────────────────────────────────
 function closeLetter() {
   const modal = document.getElementById("letterModal");
@@ -185,7 +272,7 @@ function closeLetter() {
 }
 
 // ────────────────────────────────────────────────────────────
-// 10. TẠO TRÁI TIM BAY
+// 11. TẠO TRÁI TIM BAY
 // ────────────────────────────────────────────────────────────
 function createFloatingHearts() {
   const container = document.getElementById("heartsContainer");
@@ -207,7 +294,7 @@ function createFloatingHearts() {
 }
 
 // ────────────────────────────────────────────────────────────
-// 11. KHỞI ĐỘNG KHI TRANG TẢI
+// 12. KHỞI ĐỘNG KHI TRANG TẢI
 // ────────────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", () => {
   createFloatingHearts();
@@ -223,6 +310,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("closeLetterBtn")
     .addEventListener("click", closeLetter);
+
+
 
   // Click vùng ngoài modal → đóng
   document.getElementById("letterModal")
