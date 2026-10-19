@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ── -->
+  <title>Gửi Thư 20/10 💌 — Ngày Phụ Nữ Việt Nam</title>
+  <meta name="description"
+    content="Gửi tặng bức thư yêu thương nhân ngày 20 tháng 10 — Ngày Phụ Nữ Việt Nam. Nhập tên để nhận món quà bất ngờ." />
+  <meta name="theme-color" content="#e91e8c" />
+
+  <!-- ── Stylesheet ── -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ── Favicon emoji ── -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>" />
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════════
+       HIỆU ỨNG TRÁI TIM BAY — do script.js tạo ra
+  ════════════════════════════════════════════════════════ -->
+  <div id="heartsContainer" aria-hidden="true"></div>
+
+  <!-- ════════════════════════════════════════════════════════
+       WRAPPER CHÍNH
+  ════════════════════════════════════════════════════════ -->
+  <main class="page-wrapper">
+
+    <!-- ══════════════════════════════════════════════════════
+         FRAME 1 — NHẬP TÊN
+    ══════════════════════════════════════════════════════ -->
+    <section id="frame1" role="region" aria-label="Nhập tên để nhận thư">
+      <div class="name-card">
+
+        <!-- Icon phong bì -->
+        <span class="card-icon" role="img" aria-label="Phong bì thư">💌</span>
+
+        <!-- Nhãn ngày -->
+        <p class="card-date">✦ 20 / 10 ✦</p>
+
+        <!-- Tiêu đề -->
+        <h1 class="card-title">Nhập tên để bức thư<br>được tìm đến bạn</h1>
+        <p class="card-subtitle">Mỗi người sẽ nhận được một bức thư<br>riêng biệt đặc biệt dành cho mình 🌸</p>
+
+        <!-- Form nhập tên -->
+        <div class="input-group">
+          <input type="text" id="nameInput" class="name-input" placeholder="Nhập tên của bạn..." autocomplete="off"
+            autocorrect="off" spellcheck="false" aria-label="Nhập tên của bạn" maxlength="60" />
+          <button id="confirmBtn" class="confirm-btn" aria-label="Xác nhận tên">
+            Xác nhận ✦
+          </button>
+        </div>
+
+        <!-- Thông báo lỗi -->
+        <p id="errorMsg" class="error-msg" role="alert" aria-live="polite"></p>
+
+        <!-- Đường kẻ trang trí -->
+        <div class="card-divider" aria-hidden="true">
+          <span></span>
+          <i>Gửi yêu thương</i>
+          <span></span>
+        </div>
+
+      </div>
+    </section>
+    <!-- /FRAME 1 -->
+
+
+    <!-- ══════════════════════════════════════════════════════
+         FRAME 2 — NHẬN THƯ (ẩn mặc định)
+    ══════════════════════════════════════════════════════ -->
+    <section id="frame2" class="hidden" role="region" aria-label="Nhận thư">
+
+      <!-- Lời chào cá nhân hoá -->
+      <p id="greetingText" class="greeting-text"></p>
+
+      <!-- Nút phong bì mở thư -->
+      <button id="openLetterBtn" class="envelope-btn" aria-label="Mở thư" title="Nhấn để mở thư">
+        <div class="envelope-wrapper">
+          <!-- ── Ảnh phong bì ──
+               👉 Thay đường dẫn nếu bạn dùng ảnh khác
+          -->
+          <img src="images/envelope.jpg" alt="Phong bì thư 20/10" class="envelope-img" loading="eager" />
+        </div>
+        <span class="envelope-hint">Nhấn để mở thư của bạn...</span>
+      </button>
+
+      <!-- Chấm trang trí -->
+      <div class="decorative-dots" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </section>
+    <!-- /FRAME 2 -->
+
+  </main>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       MODAL — KHUNG THƯ POPUP
+  ════════════════════════════════════════════════════════ -->
+  <div id="letterModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+    <article class="modal-content">
+
+      <!-- Tiêu đề modal -->
+      <header class="modal-header">
+        <p class="modal-date">✦ Ngày 20 tháng 10 ✦</p>
+        <h2 id="letterTitle" class="modal-title"><!-- Điền bởi script.js --></h2>
+      </header>
+
+      <!-- Thân thư -->
+      <div id="letterBody" class="modal-body">
+        <!-- Nội dung thư được render bởi script.js -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="modal-footer">
+        <p class="modal-signature">Với tất cả tình yêu thương 🌹</p>
+        <button id="closeLetterBtn" class="close-btn" aria-label="Đóng thư">
+          Đóng thư ✕
+        </button>
+      </footer>
+
+    </article>
+  </div>
+  <!-- /MODAL -->
+
+
+  <!-- ── Dữ liệu thư riêng từng người (load trước script.js) ── -->
+  <script src="letters/letters-data.js"></script>
+
+  <!-- ── Logic chính ── -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
