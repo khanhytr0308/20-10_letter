@@ -439,8 +439,8 @@ body {
 }
 
 .envelope-img {
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  height: 180px;
   object-fit: contain;
   animation: float 3s ease-in-out infinite;
   filter: drop-shadow(0 4px 12px rgba(233, 30, 140, 0.25));
